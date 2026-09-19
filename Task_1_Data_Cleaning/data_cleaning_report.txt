@@ -1,0 +1,55 @@
+DATA CLEANING & PREPROCESSING REPORT
+
+Dataset: messy_student_data.csv
+
+1. Dataset structure
+Rows before cleaning: 12
+Columns: 7
+Columns: Student_ID, Name, Age, Gender, City, Score, Department
+
+2. Problems identified
+Missing values:
+Student_ID    0
+Name          0
+Age           1
+Gender        1
+City          1
+Score         1
+Department    0
+
+Duplicate rows: 1
+
+Inconsistent entries:
+- Gender contained M/male/F/female.
+- City contained Bangalore/Bengaluru and Mysore/Mysuru.
+- Age contained the invalid text value 'twenty'.
+- Score contained the invalid text value 'eighty'.
+- Some text values contained extra spaces.
+
+3. Cleaning performed
+- Removed leading/trailing spaces.
+- Standardized Gender to Male/Female.
+- Standardized City to Bengaluru/Mysuru.
+- Standardized Department to uppercase.
+- Converted Age and Score to numeric values.
+- Invalid numeric text was converted to missing values.
+- Filled missing Age and Score using their median values.
+- Filled missing Gender and City using the most frequent value.
+- Removed duplicate records.
+- Corrected numeric data types.
+
+4. Result after cleaning
+Rows after cleaning: 11
+Remaining missing values: 0
+Remaining duplicate rows: 0
+
+Cleaned data types:
+Student_ID             Int64
+Name          string[python]
+Age                    Int64
+Gender        string[python]
+City          string[python]
+Score                  Int64
+Department    string[python]
+
+The cleaned dataset is ready for further analysis using Pandas.
