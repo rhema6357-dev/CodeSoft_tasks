@@ -1,0 +1,13 @@
+Student_ID,Name,Age,Gender,City,Score,Department
+1,Ananya,20,Female,Bengaluru,85,CSE
+2,Rahul,,M,Bangalore,78,ISE
+3,Sneha,21,female,Mysore,,ECE
+4,Kiran,22,Male,Mysuru,91,CSE
+5,Priya,20,F,Bengaluru ,88,ISE
+6,Arjun,twenty,Male,Bangalore,75,ECE
+7,Divya,21,,Bengaluru,82,CSE
+8,Vikram,23,M,,69,ISE
+9,Megha,20,Female,Mysore,95,CSE
+10,Rohan,22,male,Mysuru,77,ECE
+10,Rohan,22,male,Mysuru,77,ECE
+11,Pooja,21,Female,Bangalore,eighty,ISE
